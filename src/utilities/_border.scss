@@ -1,0 +1,9 @@
+@include border-variant(1, $unit-1, 'solid', 'primary', $primary-color);
+
+@include border-variant(2, $unit-2, 'solid', 'primary', $primary-color);
+
+@include border-variant(3, $unit-3, 'solid', 'primary', $primary-color);
+
+@include border-variant(4, $unit-4, 'solid', 'primary', $primary-color);
+
+@include border-variant(5, $unit-5, 'solid', 'primary', $primary-color);

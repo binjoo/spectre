@@ -1,0 +1,32 @@
+@mixin border-variant($id: 1, $size: $unit-1, $style: 'solid', $name: 'primary', $color: $primary-color ) {
+  .b-#{$name}-#{$style}-#{$id} {
+    border: $size $style $color !important;
+  }
+
+  .bx-#{$name}-#{$style}-#{$id} {
+    border-left: $size $style $color !important;
+    border-right: $size $style $color !important;
+  }
+
+  .by-#{$name}-#{$style}-#{$id} {
+    border-top: $size $style $color !important;
+    border-bottom: $size $style $color !important;
+  }
+
+  .bt-#{$name}-#{$style}-#{$id} {
+    border-top: $size $style $color !important;
+  }
+
+  .br-#{$name}-#{$style}-#{$id} {
+    border-right: $size $style $color !important;
+  }
+
+  .bb-#{$name}-#{$style}-#{$id} {
+    border-bottom: $size $style $color !important;
+  }
+
+  .bl-#{$name}-#{$style}-#{$id} {
+    border-left: $size $style $color !important;
+  }
+
+}
