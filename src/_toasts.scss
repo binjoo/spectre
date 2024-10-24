@@ -12,6 +12,20 @@
     @include toast-variant($primary-color);
   }
 
+  &.toast-secondary {
+    @include toast-variant($secondary-color);
+    color: $primary-color;
+  }
+
+  &.toast-dark {
+    @include toast-variant($dark-color);
+  }
+
+  &.toast-gray {
+    @include toast-variant($gray-color);
+    color: $dark-color;
+  }
+
   &.toast-success {
     @include toast-variant($success-color);
   }

@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.9";
+  content: "0.6.0";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -113,10 +113,9 @@
   position: static;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .docs-content .s-title,
   .docs-content .s-subtitle {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -230,7 +229,6 @@
 
 .docs-content .c-select-all {
   -webkit-user-select: all;
-  -moz-user-select: all;
   -ms-user-select: all;
   user-select: all;
 }
@@ -581,7 +579,6 @@
 
 .searchbox__input {
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none; 
   background: #fff !important;
   border: 0;
@@ -642,7 +639,6 @@
   text-align: center;
   top: 0;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   vertical-align: middle;
@@ -686,7 +682,6 @@
   right: 8px;
   top: 8px;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }

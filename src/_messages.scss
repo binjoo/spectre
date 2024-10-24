@@ -1,0 +1,43 @@
+// Message
+.msg {
+  z-index: $zindex-max;
+  position: fixed;
+  border-radius: $border-radius;
+  left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+  background-color: rgba($dark-color, .8);
+  color: $light-color;
+  margin: 0;
+  padding: 0;
+  pointer-events: auto;
+  border: none;
+  box-shadow: none;
+
+  &.msg-primary{
+    background-color: rgba($primary-color, .8);
+  }
+
+  &.msg-success{
+    background-color: rgba($success-color, .8);
+  }
+
+  &.msg-warning{
+    background-color: rgba($warning-color, .8);
+  }
+
+  &.msg-error{
+    background-color: rgba($error-color, .8);
+  }
+
+  .msg-content{
+    padding: $unit-3 $unit-5;
+    text-align: center;
+    position: relative;
+    line-height: $unit-5;
+    word-break: break-all;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
